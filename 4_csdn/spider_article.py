@@ -2,6 +2,7 @@ import requests
 import os
 import re
 import time
+from fake_useragent import UserAgent
 
 from scrapy import Selector
 from datetime import datetime

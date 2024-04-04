@@ -8,16 +8,17 @@ params = {'name': 'sewell', 'password': '123'}
 # print(res.text)
 
 
-# res = requests.post(url, params)
-# print(res.text, type(res.text))
-# print(res.json(), type(res.json()))
-
-
 # headers = {
 #     'user-agent': 'requests',
 #     'test': 'hhhhhh'
 # }
 # res = requests.get(url, headers=headers)
+
+
+# res = requests.post(url, params)
+# print(res.text, type(res.text))
+# print(res.json(), type(res.json()))
+
 
 # res = requests.get('http://www.baidu.com')
 # # 返回的是响应的头部信息
@@ -25,7 +26,7 @@ params = {'name': 'sewell', 'password': '123'}
 
 # requests.get(url, params=params)
 # 请求方法中data和json参数的区别
-# 1、data：里面是字典：Content-Type等于 application/x-www-form-urlencoded
+# 1、data：里面是字典：Content-Type等于 application/x-www-form-urlencoded（表单提交时的值
 # requests.get(url, data=params)
 # 序列化后成了字符串，没有content-type参数了
 # requests.get(url, data=json.dumps(params))

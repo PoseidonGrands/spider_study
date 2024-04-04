@@ -1,7 +1,9 @@
 from peewee import *
 
 db = MySQLDatabase('csdn', host='127.0.0.1', port=3306, user='root', password='2280139492')
-
+# 坑！！！
+# 主键自定义时，只有使用类名.create()才能写入数据
+# 主键非自定义时，直接使用类名()极即可
 
 class Person(Model):
     name = CharField(max_length=20, null=True)
